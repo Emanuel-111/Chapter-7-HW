@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.hfab.greetings_eml.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_translateFragment"
+            app:destination="@id/translateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="com.hfab.greetings_eml.TranslateFragment"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate" >
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+</navigation>

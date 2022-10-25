@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Greetings - EML</string>
+    <string name="welcome_message">Hello, welcome to the translate app!</string>
+    <string name="btn_translate">Translate</string>
+
+    <string-array name="greetings">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+    </string-array>
+
+</resources>
