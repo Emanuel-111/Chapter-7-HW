@@ -18,21 +18,21 @@ public class TranslateFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_translate, container, false);
         String message = TranslateFragmentArgs.fromBundle(requireArguments()).getMessage();
 
-        TextView txtGreeting = view.findViewById(R.id.greeting_message);
+        TextView spGreeting = view.findViewById(R.id.greeting_message);
 
         if (message.equals("English"))
         {
-            txtGreeting.setText("Hello");
+            spGreeting.setText("Hello");
         }
 
         else if (message.equals("Spanish"))
         {
-            txtGreeting.setText("Hola");
+            spGreeting.setText("Hola");
         }
 
         else
         {
-            txtGreeting.setText("Bonjour");
+            spGreeting.setText("Bonjour");
         }
 
         return view;
