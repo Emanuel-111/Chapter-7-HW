@@ -24,13 +24,13 @@ public class WelcomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome, container, false);
         Button btnTranslate = view.findViewById(R.id.btn_translate);
-        Spinner txtGreetings = view.findViewById(R.id.sp_languages);
+        Spinner spGreetings = view.findViewById(R.id.sp_languages);
 
         btnTranslate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String message = txtGreetings.getSelectedItem().toString();
+                String message = spGreetings.getSelectedItem().toString();
 
                 WelcomeFragmentDirections.ActionWelcomeFragmentToTranslateFragment action =
                         WelcomeFragmentDirections.actionWelcomeFragmentToTranslateFragment(message);
