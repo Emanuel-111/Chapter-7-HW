@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * MainActivity displays the fragments in certain places when
+ * they're needed.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -9,7 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
+/**
+ * Translate Fragment translates the greeting to the language
+ * the user asked for and displays the gretting in that
+ * language.
+ */
 public class TranslateFragment extends Fragment {
 
     @Override
@@ -19,6 +23,8 @@ public class TranslateFragment extends Fragment {
         String message = TranslateFragmentArgs.fromBundle(requireArguments()).getMessage();
 
         TextView spGreeting = view.findViewById(R.id.greeting_message);
+
+        // If the user selected a specific language, they will get that greeting in that language
 
         if (message.equals("English"))
         {

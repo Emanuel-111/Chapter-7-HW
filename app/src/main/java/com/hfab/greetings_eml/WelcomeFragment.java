@@ -15,7 +15,11 @@ import android.widget.Spinner;
 
 
 /**
- * WelcomeFragment shows the user the
+ * @author Emanuel "Manny" Luna
+ *
+ * WelcomeFragment shows the user some options that
+ * they can pick for the language they want to be
+ * greeted by.
  */
 public class WelcomeFragment extends Fragment {
 
@@ -32,6 +36,7 @@ public class WelcomeFragment extends Fragment {
 
                 String message = spGreetings.getSelectedItem().toString();
 
+                // Pass a String argument over to the Translate Fragment
                 WelcomeFragmentDirections.ActionWelcomeFragmentToTranslateFragment action =
                         WelcomeFragmentDirections.actionWelcomeFragmentToTranslateFragment(message);
 
